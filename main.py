@@ -43,7 +43,7 @@ def get_driver():
     options.add_argument("--disable-plugins-discovery")
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
 
     # Set up the Selenium WebDriver
     service = Service(ChromeDriverManager().install())
