@@ -28,6 +28,10 @@ This bot is designed to help none tech people get a TLS Visa appointment (bots l
     ```bash
     pip install -r requirements.txt
     ```
+    or use:
+   ```bash
+   pip3 install -r requirements.txt
+   ```
 
 ## Usage
 
