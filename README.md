@@ -57,6 +57,14 @@ This bot is designed to help none tech people get a TLS Visa appointment (bots l
     python main.py
     ```
 
+## Possible Issues
+
+- If using Python 3.11 or 3.12, you may encounter an error with the `playsound` library during installation. In such cases, run the following command before installing the requirements:
+
+    ```bash
+    pip install playsound@git+https://github.com/taconi/playsound
+    ```
+
 ## Contributing
 
 Contributions are welcome. For major changes, please open an issue first to discuss what you would like to change.
