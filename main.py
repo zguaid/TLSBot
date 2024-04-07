@@ -146,7 +146,8 @@ def main():
                 try:
                     available_app = WebDriverWait(driver, random.randint(10, 15)).until(EC.presence_of_element_located((By.CLASS_NAME, "tls-time-unit.-available")))
                     playsound('./alert.mp3')
-                    send_sms("Alert: Appointment available in " + get_credentials()["center"] + "!")
+                    if get_credentials()["use_twilio"] == "True":
+                        send_sms("Alert: Appointment available in " + get_credentials()["center"] + "!")
                     available_app.click()
                     try:
                         confirmation_popup = WebDriverWait(driver, random.randint(10, 15)).until(
